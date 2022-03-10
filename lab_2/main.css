@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+.body{
+    background-image:url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=pexels-felix-mittermeier-956999.jpg&fm=jpg&w=1280&h=720');
+    background-size:cover;
+    background-color: rgba(0,0,0, 0.6);
+    background-blend-mode: multiply;
+}
+.welcome{
+    box-sizing: border-box;
+    width:50%;
+    margin:10% auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0.2px 5px 10px 1px rgba(0,0,0, 0.6);
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
