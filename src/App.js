@@ -1,8 +1,8 @@
 import React from "react";
-import Login  from "./components/Login";
-import Signup  from "./components/Signup";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Box, Tabs, Tab, Paper } from "@mui/material";
+import { Box, Tabs, Tab, Paper, Grid } from "@mui/material";
 import PropTypes from "prop-types";
 
 function App() {
@@ -52,16 +52,13 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <Box
-          sx={{
-            marginTop: 20,
-            marginLeft: 50,
-            marginRight: 50,
-            marginBottom:20,
-            width: 500,
-          }}
-        >
+      <Grid
+        container
+        alignItems="center"
+        justifyContent="center"
+        style={{ minHeight: "100vh"}}
+      >
+        <Grid item xs={4}>
           <Paper>
             <Tabs
               value={value}
@@ -80,8 +77,8 @@ function App() {
               <Signup />
             </TabPanel>
           </Paper>
-        </Box>
-      </div>
+        </Grid>
+      </Grid>
     </ThemeProvider>
   );
 }
